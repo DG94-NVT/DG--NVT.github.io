@@ -1,0 +1,106 @@
+//- Mixin
+//- creat mixin
+mixin fGroup (text_label)
+   .form-group
+      label(for = id)= text_label
+      if block
+         block
+      else
+
+mixin fcontrol ( type_input, id_input, value_input)
+   .form-input
+      input(type = type_input, name = id_input , id = id_input, placeholder = value_input).form-control
+      if block
+         block
+      else
+
+mixin room-item(name, src, title,star)
+   .room__item
+      .room__img
+         a(href="Detail-room.html")
+            img(src=src, alt=title, title= title)
+      .room__detail
+         .room__name
+            h4
+               a(href="Detail-room.html")= name
+         .room__price
+            .price
+               span Price:
+               span $108.9/
+               span Night
+            .rating
+               input(type="hidden" class="rate" data-filled="fas fa-star" data-empty="far fa-star", value=star, disabled="disabled" data-start="0" data-stop=star)
+         .room__des Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nam accusamus eum vitae est minima obcaecati? Quidem perferendis blanditiis quaerat illum, eaque eos? Ducimus aliquam numquam neque necessitatibus odit fuga!
+         a(href="").btn-check-avai.btn-block Check Availability
+
+//- call mixin
+//- +fGroup("text_label", "type_input", "id_input", "value_input")
+
+
+doctype html
+html(lang='en')
+   head
+      meta(charset='utf-8')
+      meta(content='width=device-width, initial-scale=1.0' name='viewport')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      meta(name='Description' content='Enter your description here')
+      meta(content='' name="keyWorld'ss")
+      title List room
+      include template-layout/head-link.pug
+   body
+      include template-layout/header.pug
+      include template-layout/banner.pug
+      .quick_searh-wp
+         .container
+            form(id="search-room" action="" method="method")
+               .row.align-items-end
+                  .col-lg-20.col-md-6
+                     +fGroup("ARRIVAL DATE")
+                        +fcontrol( "text", "checkin", "Arrival Date")
+                           <i class="fad fa-calendar-alt"></i>
+                  .col-lg-20.col-md-6
+                     +fGroup("DEPARTURE DATE")
+                        +fcontrol( "text", "checkout", "Departure Date")
+                           <i class="fad fa-calendar-alt"></i>
+                  .col-lg-20.col-md-6
+                     .form-group
+                        label(for="") ADULTS
+                        select(name="Adult" id="Adult").form-control
+                           option(value="0") Adult
+                           option(value="1") 1
+                           option(value="2") 2
+                           option(value="3") 3
+                           option(value="4") 4
+                  .col-lg-20.col-md-6
+                     .form-group
+                        label(for="") CHILDREN
+                        select(name="Adult" id="Adult").form-control
+                           option(value="0") CHILDREN
+                           option(value="1") 1
+                           option(value="2") 2
+                           option(value="3") 3
+                           option(value="4") 4
+                  .col-lg-20.col-md-12
+                     .form-group.btn-box
+                        button(type="submit" class="btn btn-book") Check Availability
+      .room-list.box-page
+         .container
+            .row
+               .col-lg-4.col-md-6
+                  +room-item("Queen Room Balcony", "./images/rooms/1.jpg", "Queen Room Balcony",4)
+               .col-lg-4.col-md-6
+                  +room-item("Luxury Suite Room", "./images/rooms/2.jpg", "Luxury Suite Room",3)
+               .col-lg-4.col-md-6
+                  +room-item("Studio Sea View", "./images/rooms/3.jpg", "Studio Sea View",4)
+               .col-lg-4.col-md-6
+                  +room-item("Signature Room", "./images/rooms/4.jpg", "Signature Room",5)
+               .col-lg-4.col-md-6
+                  +room-item("Luxury Suite Room", "./images/rooms/1.jpg", "Luxury Suite Room",4)
+               .col-lg-4.col-md-6
+                  +room-item("Sea View Room", "./images/rooms/2.jpg", "Sea View Room",4)
+      include template-layout/footer.pug
+      include template-layout/src-script.pug
+
+
+
+

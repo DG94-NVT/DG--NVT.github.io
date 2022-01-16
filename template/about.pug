@@ -1,0 +1,142 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(content='width=device-width, initial-scale=1.0' name='viewport')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        meta(name='Description' content='Enter your description here')
+        meta(content='' name="keyWorld'ss")
+        title About
+        include template-layout/head-link.pug
+    body
+        include template-layout/header.pug
+        include template-layout/banner.pug
+        .container.box
+            .row
+                .col-lg-6
+                    .about-img
+                        .dot-stri__left
+                            .dot-scale
+                            .triangle-rotate
+                        .top-right
+                            img(src="./images/about1.jpg" alt="" data-wow-delay="0ms" data-wow-duration="1500ms").wow.animate__fadeInUp
+                        .left-bottom
+                            img(src="./images/about2.jpg" alt="" data-wow-delay="0ms" data-wow-duration="1500ms").wow.animate__fadeInRight
+                        .bottom-center
+                            img(class="bottom-center" src="./images/about3.jpg" alt="" data-wow-delay="0ms" data-wow-duration="1500ms").wow.animate__fadeInLeft
+                .col-lg-6
+                    .about-content
+                        h3.about__title Relax in <br> Our Luxury Hotel
+                        .about__text
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        ul.about__features
+                            li Enim ad minim veniam quis nostrud.
+                            li Minim veniam quis nostrud.
+                        .about__signature
+                            img(src="http://el.commonsupport.com/newwp/hotera/wp-content/uploads/2020/10/signature-1.png" alt="")
+        .about-slogan
+            .two-circle.circle__top-right
+                .circle-1
+                .circle-2
+            .container
+                .sec-title
+                    h2 Always Ready <br> to Take Challange
+                    .lower-text Lorem ipsum dolor sit consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore magna aliqua. enim ad minim veniam quis nostrud exercitation.
+                .facts-box
+                    .row
+                        .col-lg-4.col-md-6.col-sm-12
+                            .fact-inner.mb-4.mb-lg-0
+                                .fact-count
+                                    .count-box
+                                        span 25+
+                                .fact-des
+                                    h4 Years Exp.
+                                    .fact-text Excepteur sint occaecat cupidatat.
+                        .col-lg-4.col-md-6.col-sm-12
+                            .fact-inner.mb-4.mb-lg-0
+                                .fact-count
+                                    .count-box
+                                        span 680
+                                .fact-des
+                                    h4 Project Done
+                                    .fact-text Excepteur sint occaecat cupidatat.
+                        .col-lg-4.col-md-6.col-sm-12
+                            .fact-inner
+                                .fact-count
+                                    .count-box
+                                        span 310
+                                .fact-des
+                                    h4 Awards Win
+                                    .fact-text Excepteur sint occaecat cupidatat.
+        .review-box.my-5
+            .box__head.text-center
+                h2.box__title
+                    | What People Say?
+                .box__text
+                    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    | est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+            .container
+                .review__content
+                    .review-dot__right.d-none.d-lg-block
+                        span.dot-scale
+                    .review-dot__left.d-none.d-lg-block
+                        span.dot-scale
+                    .review__layer
+                    .review__slide.owl-carousel.owl-theme
+                        .review__item.text-center
+                            .review__detail
+                                .review__item--top
+                                    .review__circle
+                                    span.fi-rr-quote-right
+                                .box__text.review__text
+                                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam accusamus suscipit
+                                    | magnam sequi? Beatae consequuntur delectus doloribus ea hic temporibus atque facilis
+                                    | nobis.
+                                .review__name
+                                    strong.text-capitalize mark adam
+                            .review__img
+                                span
+                                    img(src='./images/user1.jpg' alt='')
+                        .review__item.text-center
+                            .review__detail
+                                .review__item--top
+                                    .review__circle
+                                    span.fi-rr-quote-right
+                                .box__text.review__text
+                                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam accusamus suscipit
+                                    | magnam sequi? Beatae consequuntur delectus doloribus ea hic temporibus.
+                                .review__name
+                                    strong.text-capitalize mark adam
+                            .review__img
+                                span
+                                    img(src='./images/user2.jpg' alt='')
+                        .review__item.text-center
+                            .review__detail
+                                .review__item--top
+                                    .review__circle
+                                    span.fi-rr-quote-right
+                                .box__text.review__text
+                                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam accusamus suscipit
+                                    | magnam sequi? Beatae consequuntur delectus doloribus ea hic.
+                                .review__name
+                                    strong.text-capitalize mark adam
+                            .review__img
+                                span
+                                    img(src='./images/user3.jpg' alt='')
+                        .review__item.text-center
+                            .review__detail
+                                .review__item--top
+                                    .review__circle
+                                    span.fi-rr-quote-right
+                                .box__text.review__text
+                                    | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam accusamus suscipit
+                                    | magnam sequi? Beatae consequuntur delectus doloribus ea hic temporibus atque
+                                    | facilis.
+                                .review__name
+                                    strong.text-capitalize mark adam
+                            .review__img
+                                span
+                                    img(src='./images/user1.jpg' alt='')
+
+        include template-layout/footer.pug
+        include template-layout/src-script.pug

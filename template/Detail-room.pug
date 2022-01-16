@@ -1,0 +1,55 @@
+mixin item-ava(src,datahash)
+   .item(data-hash=datahash)
+      img(src=src, alt="")
+
+mixin item-thumb(src,href)
+   a(href=href)
+      img(src=src, alt="")
+
+
+doctype html
+html(lang='en')
+   head
+      meta(charset='utf-8')
+      meta(content='width=device-width, initial-scale=1.0' name='viewport')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      meta(name='Description' content='Enter your description here')
+      meta(content='' name="keyWorld'ss")
+      title Basic Room
+      include template-layout/head-link.pug
+   body
+      include template-layout/header.pug
+      include template-layout/banner.pug
+      .container
+         .slide-room.box-room
+            .slider-avatar.owl-carousel.owl-theme
+               +item-ava("./images/rooms/1.jpg", "1")
+               +item-ava("./images/rooms/2.jpg", "2")
+               +item-ava("./images/rooms/3.jpg", "3")
+               +item-ava("./images/rooms/4.jpg", "4")
+            .slider-thumb.owl-carousel.owl-theme
+               +item-thumb("./images/rooms/1.jpg", "#1")
+               +item-thumb("./images/rooms/2.jpg", "#2")
+               +item-thumb("./images/rooms/3.jpg", "#3")
+               +item-thumb("./images/rooms/4.jpg", "#4")
+         .detail-room.box-room
+            h2.room-name Studio Sea View
+            .room-des
+               h4 Price$218.9 Night
+               div.des-element Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi itaque perferendis vel nam non rerum autem voluptate quo harum iure corrupti molestias enim cupiditate, sapiente, vitae id! Voluptatibus, vero a?
+               h4 The begining
+               div.des-element
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit est commodi ipsum dolorum, modi nisi voluptates officia voluptatem et ipsa incidunt.
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, aspernatur recusandae alias eaque voluptates sequi, nihil provident tempore, impedit maxime ullam eum. Fugiat unde cumque tempore labore voluptates dicta voluptatum.
+               h4 Facilities
+               div.des-element
+                  p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eaque, iusto ex sed, quae et porro, ad debitis dolorum inventore odio? Officia laborum numquam nesciunt accusantium quae perspiciatis natus in illum, repellat minima asperiores ratione! Autem minus eligendi cupiditate beatae.
+               h4 A bit of history
+               div.des-element
+                  p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum est rerum officiis adipisci architecto non. Illo tempore neque veniam exercitationem, eligendi fugiat nesciunt culpa minima aut, ex earum consectetur molestias nobis quam cupiditate sed eius!
+               h4 Room Amenities
+               div.des-element
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur quisquam eveniet voluptates. Magni, magnam!
+
+      include template-layout/footer.pug
+      include template-layout/src-script.pug

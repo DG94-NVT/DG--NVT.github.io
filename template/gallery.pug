@@ -1,0 +1,51 @@
+mixin filter_item(src)
+   .gallery-slide__item
+      a(href=src,data-fancybox="gallery")
+         img(src=src, alt="")
+
+//- call filter_item("data", "src")
+
+doctype html
+html(lang='en')
+   head
+      meta(charset='utf-8')
+      meta(content='width=device-width, initial-scale=1.0' name='viewport')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      meta(name='Description' content='Enter your description here')
+      meta(content='' name="keyWorld'ss")
+      title Gallery
+      include template-layout/head-link.pug
+   body
+      include template-layout/header.pug
+      include template-layout/banner.pug
+      .container
+         ul(class="nav tab-control")
+            li(class="nav-item")
+               a(class="nav-link active" data-toggle="pill" href="#home")  All
+            li(class="nav-item")
+               a(class="nav-link" data-toggle="pill" href="#menu1")  Specia
+            li(class="nav-item")
+               a(class="nav-link" data-toggle="pill" href="#menu2")  Family
+            li(class="nav-item")
+               a(class="nav-link" data-toggle="pill" href="#menu3")  Luxury
+            li(class="nav-item")
+               a(class="nav-link" data-toggle="pill" href="#menu4")  Activities
+            li(class="nav-item")
+               a(class="nav-link" data-toggle="pill" href="#menu5")  Fitness & Spa
+         .tab-content
+            #home.active.tab-pane
+               .tab-item
+                  +filter_item("./images/gallery1.jpg")
+                  +filter_item("./images/gallery2.jpg")
+                  +filter_item("./images/gallery3.jpg")
+                  +filter_item("./images/gallery4.jpg")
+            #menu1.tab-pane.fade
+               .tab-item
+                  +filter_item("./images/gallery1.jpg")
+                  +filter_item("./images/gallery2.jpg")
+            #menu2.tab-pane.fade
+               .tab-item
+                     +filter_item("./images/gallery3.jpg")
+                     +filter_item("./images/gallery4.jpg")
+      include template-layout/footer.pug
+      include template-layout/src-script.pug

@@ -1,0 +1,110 @@
+.header
+  .header__left
+    .header__logo
+      img.header__img(src='./images/Logo/Light-Logo.png' alt='')
+  .header__right
+    .menu-active
+      .menu-icon
+        span.line-top
+        span.line-center
+        span.line-bottom
+      span Menu
+    nav.menu-desk
+      ul.menu__list
+        li.menu__item
+          a.menu__link(href='index.html') Home
+        li.menu__item
+          a.menu__link(href='List-room.html') Rooms
+          ul.menu__child
+            li.menu__child__item
+              a.menu__child__link(href='Detail-room.html') Standard Room
+            li.menu__child__item
+              a.menu__child__link(href='Detail-room.html') Deluxe Room
+            li.menu__child__item
+              a.menu__child__link(href='Detail-room.html') Superior Room
+        li.menu__item
+          a.menu__link(href='about.html') About Us
+        li.menu__item
+          a.menu__link(href='javascript:void(0)') Serivces
+          ul.menu__child
+            li.menu__child__item
+              a.menu__child__link(href='restaurant.html') Restaurant
+            li.menu__child__item
+              a.menu__child__link(href='spa.html') Spa & Wellness
+        li.menu__item
+          a.menu__link(href='javascript:void(0)') News
+            ul.menu__child
+              li.menu__child__item
+                a.menu__child__link(href='blog.html') Blog
+              li.menu__child__item
+                a.menu__child__link(href='event.html') Event
+        li.menu__item
+          a.menu__link(href='contact.html') Contact
+        li.menu__item
+          a.menu__link(href='gallery.html') Gallery
+    .header__other-links
+      .header__info.d-none.d-lg-block
+        // <a href="#" class="other-link__login other-link"><i class="fa fa-lock"></i><span> Login</span></a>
+        a.other-link__phone.other-link(href='tel: +8476878273')
+          i.fa.fa-mobile-alt
+          span +8476878273
+      .book-yourstay.d-none.d-md-block
+        a.book-yourstay__btn.other-link(href='#') Book your stay
+  nav.menu-res
+    .menu-logo
+      img(src='./images/Logo/Light-Logo.png' alt='')
+    ul.nav-menu
+      li.nav__item
+        a.nav__link(href='javascript:void(0)') Home
+      li.nav__item
+        a.nav__link(href='javascript:void(0)')
+          | Rooms
+          span.rotate-icon
+            span.fa.fa-angle-right
+        ul.sub-menu
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link One
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link Two
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link Three
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link Four
+      li.nav__item
+        a.nav__link(href='javascript:void(0)') About Us
+      li.nav__item
+        a.nav__link(href='javascript:void(0)')
+          | Services
+          span.rotate-icon
+            span.fa.fa-angle-right
+        ul.sub-menu
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link One
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link Two
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link Three
+          li.sub-menu__item
+            a.sub-menu__link(href='#') link Four
+      li.nav__item
+        a.nav__link(href='javascript:void(0)') News
+      li.nav__item
+        a.nav__link(href='javascript:void(0)') Contact
+    .nav__bottom
+      .copy-right.text-center
+        p Hotera &copy; 2020 All Right Reserved
+      ul.list-social
+        li
+          a(href='#')
+            i.fab.fa-facebook-f
+        li
+          a(href='#')
+            i.fab.fa-linkedin-in
+        li
+          a(href='#')
+            i.fab.fa-skype
+        li
+          a(href='#')
+            i.fab.fa-twitter
+  .menu-overlay.show-mobile
+    span.fas.fa-times.close-menu

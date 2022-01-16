@@ -1,0 +1,91 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(content='width=device-width, initial-scale=1.0' name='viewport')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        meta(name='Description' content='Enter your description here')
+        meta(content='' name="keyWorld'ss")
+        title Restaurant
+        include template-layout/head-link.pug
+    body
+        include template-layout/header.pug
+        include template-layout/banner.pug
+        .box
+            .container
+                .box__head.text-center
+                    h2.title Our Popular Dishes You Love It!
+                    .box__text
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+                .box-inner
+                    .serv-slide.owl-carousel.owl-theme
+                        .item
+                            a(href="#")
+                                .serv-img
+                                    img(src="./images/serv1.jpg" alt="")
+                                .serv-text
+                                    .serv-price
+                                        | FORM
+                                        span $50.00
+                                    h5.serv-name Grilled with Tomatoes
+                        .item
+                            a(href="#")
+                                .serv-img
+                                    img(src="./images/serv2.jpg" alt="")
+                                .serv-text
+                                    .serv-price
+                                        | FORM
+                                        span $50.00
+                                    h5.serv-name Squeezing Fresh Juice
+                        .item
+                            a(href="#")
+                                .serv-img
+                                    img(src="./images/serv3.jpg" alt="")
+                                .serv-text
+                                    .serv-price
+                                        | FORM
+                                        span $50.00
+                                    h5.serv-name Fish with Vegetable
+        .box.bg-element
+            .pattern-top
+            .container
+                .box__head.text-center
+                    h2.title Main Menu
+                    .box__text
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+                .row
+                    .col-lg-6
+                        .fact-inner.serv-inner
+                            .fact-count
+                                .count-box
+                                    span 25+
+                            .fact-des
+                                h4 Years Exp.
+                                .fact-text Excepteur sint occaecat cupidatat.
+                    .col-lg-6
+                        .fact-inner.serv-inner
+                            .fact-count
+                                .count-box
+                                    span $26
+                            .fact-des
+                                h4 Chicken Wings
+                                .fact-text Excepteur sint occaecat cupidatat.
+                    .col-lg-6
+                        .fact-inner.serv-inner
+                            .fact-count
+                                .count-box
+                                    span $26
+                            .fact-des
+                                h4 Chicken Wings
+                                .fact-text Excepteur sint occaecat cupidatat.
+                    .col-lg-6
+                        .fact-inner.serv-inner
+                            .fact-count
+                                .count-box
+                                    span $26
+                            .fact-des
+                                h4 Chicken Wings
+                                .fact-text Excepteur sint occaecat cupidatat.
+
+        include template-layout/footer.pug
+        include template-layout/src-script.pug

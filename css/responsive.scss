@@ -1,0 +1,249 @@
+@media (max-width: 1024px) and (min-width: 992px) {
+    .room__price .price {
+        font-size: 15px;
+    }
+    .room__name a {
+        font-size: 28px;
+    }
+    .rating {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 15px 10px;
+    }
+    .menu-desk {
+        display: none;
+    }
+    .menu-res {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .menu-active {
+        display: flex;
+        align-items: center;
+    }
+    .show-mobile {
+        display: block;
+    }
+    a.book-yourstay__btn {
+        padding: 10px 30px;
+    }
+    .banner-home {
+        height: 750px;
+    }
+    .banner__slide .owl-dots {
+        display: none;
+    }
+    .banner__caption {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        h2 {
+            font-size: 60px;
+        }
+    }
+    .box {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .bookroom__form {
+        margin-top: -200px;
+        max-width: none;
+    }
+    .offers-box__left {
+        height: 400px;
+    }
+    .banner-page {
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .event__detail {
+        padding: 0;
+    }
+    .tab-item {
+        --column: 2;
+    }
+    .slide-room {
+        padding: 50px 0 30px;
+    }
+    .content-side {
+        margin-top: 0;
+    }
+    h2.title {
+        font-size: 38px;
+    }
+    h3.title {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    .header__right {
+        padding-left: 0;
+    }
+    ul.list-info {
+        flex-wrap: wrap;
+        li {
+            flex-basis: calc(100% / 3);
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header__right {
+        justify-content: flex-end;
+    }
+    .banner-home {
+        height: 500px;
+    }
+    .banner__caption {
+        h2 {
+            font-size: 36px;
+        }
+    }
+    .box {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .bookroom-wrapper {
+        height: 660px;
+        margin-bottom: 20px;
+    }
+    .bookroom__form {
+        margin-top: 0;
+    }
+    .parter-bottom {
+        height: 60px;
+        bottom: -1px;
+    }
+    .room-suite__info {
+        width: 100%;
+    }
+    .offers-box__block {
+        padding: 70px 30px;
+    }
+    .room-suite-inner {
+        max-width: none;
+        width: 94%;
+        margin: 0 auto;
+    }
+    .pricing {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__left {
+        flex-basis: 50%;
+    }
+    .review__content {
+        padding: 0 28px;
+    }
+    .review__layer {
+        left: 0px;
+        right: 0px;
+    }
+    .col__mid {
+        flex-direction: column;
+    }
+    .footer {
+        padding-top: 50px;
+    }
+    .footer__logo {
+        margin: 0 auto;
+    }
+    .cr__left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .cr__right {
+        width: 100%;
+    }
+    .more-info {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-page {
+        height: 360px;
+    }
+    .banner-caption h2 {
+        font-size: 52px;
+    }
+    .event__detail {
+        padding: 15px 20px;
+    }
+    .tab-item {
+        --column: 1;
+    }
+    .slider-avatar .item img {
+        height: 350px;
+    }
+    .slider-thumb a img {
+        height: 110px;
+    }
+    .about-img {
+        margin-right: 0;
+    }
+    .about-img img {
+        width: 100%;
+    }
+    .left-bottom {
+        margin-top: 0;
+    }
+    .bottom-center {
+        margin-top: 0;
+    }
+    .box__title {
+        font-size: 40px;
+    }
+    .box__head {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .event-box {
+        padding: 30px 15px;
+    }
+    h2.title {
+        font-size: 30px;
+    }
+    .info-inner {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+    .event-link a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    ul.list-info li {
+        flex-basis: 50%;
+    }
+    .info-block {
+        flex-wrap: wrap;
+    }
+    .info-icon {
+        display: none;
+    }
+    .form-box {
+        padding: 30px 15px;
+    }
+    .serv-inner {
+        padding: 15px;
+    }
+    .fact-des {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 424px) {}

@@ -1,0 +1,39 @@
+//- mixin
+mixin event-item(name, src)
+   .event__item.wow.animate__fadeInUp(data-wow-delay="0ms" data-wow-duration="1500ms")
+      .row.align-items-center
+         .col-lg-4.col-md-5
+            .event__img
+               a(href="/")
+                  img(src=src, alt=title, title= title)
+         .col-lg-8.col-md-7
+            .event__detail
+               .event__name
+                  h4
+                     a(href="/")= name
+               .event__time
+                  span August 14 @ 10:00 am - August 20 @ 3:00 am |
+                  span  340 w 50th st, New York.
+               .event__des Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nam accusamus eum vitae est minima obcaecati? Quidem perferendis blanditiis quaerat illum, eaque eos? Ducimus aliquam numquam neque necessitatibus odit fuga!
+               a(href="event-detail.html").more-btn.btn-basic.btn More Detail
+
+doctype html
+html(lang='en')
+   head
+      meta(charset='utf-8')
+      meta(content='width=device-width, initial-scale=1.0' name='viewport')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      meta(name='Description' content='Enter your description here')
+      meta(content='' name="keyWorld'ss")
+      title Event
+      include template-layout/head-link.pug
+   body
+      include template-layout/header.pug
+      include template-layout/banner.pug
+      .event-list.box-page
+         .container
+            +event-item("San Francisco Pool Party", "./images/event/3.jpg")
+            +event-item("Musical Festival", "./images/event/1.jpg")
+            +event-item("Praesent Justo Lobortis", "./images/event/2.jpg")
+      include template-layout/footer.pug
+      include template-layout/src-script.pug
